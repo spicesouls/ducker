@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# 🦆 Ducker
 
-You can use the [editor on GitHub](https://github.com/spicesouls/ducker/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### A lightweight ducky script generator written in python.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![](https://raw.githubusercontent.com/spicesouls/ducker/main/ducker.png)
 
-### Markdown
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### ☑️ Generating scripts that write your payload to:
 
-```markdown
-Syntax highlighted code block
+* cmd
+* Powershell
+* Notepad
 
-# Header 1
-## Header 2
-### Header 3
+### 🛠 Installation
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```sh
+git clone https://github.com/spicesouls/ducker
+cd ducker && pip install -r requirements.txt
+chmod +x ducker.py
+./ducker.py -h
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 📃 Usage
 
-### Jekyll Themes
+```
+./ducker.py [-h] [--payload PAYLOAD] [-m MODE] [-d DELAY] [-o OUTPUT]
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/spicesouls/ducker/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### 📖 Example Payloads
 
-### Support or Contact
+#### Opening a Rickroll Video with Powershell
+`ducker/examples/rickroll_powershell.txt`
+#### Writing 'HACKED BY THE DUCKY!' in Notepad
+`ducker/examples/hacked_ascii_art_notepad.txt`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+My Blog: https://beyondrootsec.wordpress.com
+
+**🚧! THIS IS FOR STRICTLY EDUCATIONAL PURPOSES, I AM NOT RESPONSIBLE FOR YOUR USE OF THIS !🚧**
+
+[License](https://github.com/spicesouls/ducker/blob/main/LICENSE)
