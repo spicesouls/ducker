@@ -7,6 +7,7 @@ def cmd(payload, delay):
     instructions = []
 
     # Open cmd as Admin
+    instructions.append("DELAY 1000")
     instructions.append("GUI r")
     instructions.append("DELAY 500")
     instructions.append("STRING powershell Start-Process cmd -Verb runAs")
@@ -35,6 +36,7 @@ def powershell(payload, delay):
     instructions = []
 
     # Open cmd as Admin
+    instructions.append("DELAY 1000")
     instructions.append("GUI r")
     instructions.append("DELAY 500")
     instructions.append("STRING powershell Start-Process cmd -Verb runAs")
@@ -67,6 +69,7 @@ def notepad(payload, delay):
     instructions = []
 
     # Open Notepad
+    instructions.append("DELAY 1000")
     instructions.append("GUI r")
     instructions.append("DELAY 500")
     instructions.append("STRING notepad")
